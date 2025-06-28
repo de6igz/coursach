@@ -58,3 +58,20 @@ section { padding: 80px 0; }
   box-shadow: 0 8px 20px rgba(0,0,0,.05);
 }
 .card-img-top { border-top-left-radius: 1rem; border-top-right-radius: 1rem; }
+/* ---------- Page hero ---------- */
+.page-hero {
+  position: relative;
+  min-height: 40vh;
+  background-size: cover;
+  background-position: center;
+  color: var(--light);
+}
+.page-hero__overlay{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,.6));
+}
+
+/* Links in hero/button hover tweaks */
+.section-title + .row { margin-top: 2rem; }
+.table-info { background-color: rgba(78,138,158,.15) !important; }
+.card-footer .btn { border-radius: 50px; }
