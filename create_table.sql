@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS signups (
+    id SERIAL PRIMARY KEY,
+    full_name TEXT NOT NULL,
+    class_date DATE NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
