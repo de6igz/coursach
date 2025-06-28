@@ -19,7 +19,7 @@ include 'includes/hero.php';
         ['Prenatal',     'Safe practice supporting expecting mothers.', 'https://images.unsplash.com/photo-1557336059-3513e6873474?w=800'],
       ];
       foreach ($classes as [$name,$text,$img]): ?>
-        <div class="col-md-4">
+        <div class="col-sm-6 col-md-4">
           <div class="card h-100 shadow-sm">
             <img src="<?= $img ?>" class="card-img-top" alt="<?= $name ?>">
             <div class="card-body text-center">

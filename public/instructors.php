@@ -9,7 +9,7 @@ include 'includes/hero.php';
     <p class="lead text-center mb-5">Our certified teachers guide you through every pose</p>
     <div class="row g-4">
       <!-- пример одной карточки -->
-      <div class="col-md-4">
+      <div class="col-sm-6 col-md-4">
         <div class="card h-100 text-center shadow-sm">
           <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800" class="card-img-top" alt="Anna Petrova">
           <div class="card-body">
