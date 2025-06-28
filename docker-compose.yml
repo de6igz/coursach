@@ -1,0 +1,31 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:16-alpine          # или 15-alpine, если нужен LTS
+    container_name: coursach-postgres
+    restart: unless-stopped
+
+    # ⚙️  переменные берутся из .env (если есть) или fallback-значения ниже
+    environment:
+      POSTGRES_DB:      ${DB_NAME:-yoga}
+      POSTGRES_USER:    ${DB_USER:-postgres}
+      POSTGRES_PASSWORD: ${DB_PASS:-supersecret}
+      PGDATA: /var/lib/postgresql/data/pgdata
+
+    ports:
+      - "5432:5432"                    # хост→контейнер
+
+    volumes:
+      - db_data:/var/lib/postgresql/data   # персистентное хранилище
+      - ./create_table.sql:/docker-entrypoint-initdb.d/create_table.sql:ro
+
+    # 🔎 опциональный healthcheck — удобен для depends_on в будущем
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  db_data:
