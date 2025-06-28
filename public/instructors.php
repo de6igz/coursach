@@ -13,7 +13,7 @@
   </div>
   <div class="col-md-4">
     <div class="card h-100 text-center">
-      <img src="https://images.unsplash.com/photo-1540202404-253f0d016e4a?auto=format&fit=crop&w=800&q=60" class="card-img-top" alt="Instructor Sergey">
+      <img src="https://images.unsplash.com/photo-1554244933-d876deb6b2ff?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Instructor Sergey">
       <div class="card-body">
         <h5 class="card-title">Sergey Ivanov</h5>
         <p class="card-text">Sergey leads energetic Vinyasa classes and workshops on arm balances. He encourages students to explore their edge with a sense of play.</p>

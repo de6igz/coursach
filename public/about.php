@@ -6,7 +6,7 @@
     <p>Since opening our doors in 2018, we have hosted hundreds of classes ranging from gentle Hatha to energetic Vinyasa. Our teachers focus on safe alignment and mindful breath to help you cultivate balance in daily life.</p>
   </div>
   <div class="col-md-6">
-    <img src="https://images.unsplash.com/photo-1554349604-9e9c9a43d6fd?auto=format&fit=crop&w=800&q=60" class="img-fluid rounded" alt="Studio interior">
+    <img src="https://niidpo.ru/uplfile/Vidy_jogi_niidpo.jpg" class="img-fluid rounded" alt="Studio interior">
   </div>
 </div>
 <p>Whether you are stepping onto the mat for the first time or looking to advance your practice, our welcoming community is here to support you on your journey.</p>
