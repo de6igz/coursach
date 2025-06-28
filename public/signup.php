@@ -1,5 +1,12 @@
-<?php include 'includes/header.php'; ?>
-<h1>Sign Up for a Class</h1>
+<?php
+$title = 'Sign Up';
+$bg    = 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80';
+include 'includes/header.php';
+include 'includes/hero.php';
+?>
+<section class="py-5">
+<div class="container">
+  <h1 class="mb-4">Sign Up for a Class</h1>
 <?php if (!empty($_GET['success'])): ?>
 <div class="alert alert-success">Thank you for signing up!</div>
 <?php endif; ?>
@@ -14,4 +21,6 @@
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+</div>
+</section>
 <?php include 'includes/footer.php'; ?>
