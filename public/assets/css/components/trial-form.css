@@ -1,7 +1,7 @@
 /* Trial signup banner */
 .trial-banner {
     /* background image to be added manually */
-    background: url("/assets/img/aerial.png") center/cover no-repeat;
+    background: url("/assets/img/forma.png") center/cover no-repeat;
     --overlay: rgba(255, 255, 255, 0.85);
     --accent: #098950;
     --border-radius: 22px;
