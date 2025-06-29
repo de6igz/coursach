@@ -1,13 +1,61 @@
 <?php
-$title = 'About';
-$bg    = 'https://images.unsplash.com/photo-1518733057094-95b53151d6c4?auto=format&fit=crop&w=1400&q=80';
+$pageCss = '/assets/css/pages/about.css';
+$activePage = 'about';
 include 'includes/header.php';
-include 'includes/hero.php';
 ?>
-<section class="py-5">
-  <div class="container">
-    <h1 class="mb-4">About Us</h1>
-    <p>Learn more about our studio and philosophy.</p>
+<main class="wrapper">
+  <h1 class="page-title">История и миссия студии <span>“Yoga&nbsp;Style”</span></h1>
+
+  <section class="hero">
+    <img src="https://picsum.photos/600/500?random=31" alt="Yoga Style">
+    <div>
+      <p>Наша студия открылась в 2015 году с одной миссией —</p>
+      <p><em>создать безопасное и вдохновляющее пространство</em></p>
+      <p>для занятий йогой, медитациями и осознанной работой над собой.</p>
+      <p>Мы верим, что йога — это не просто практика, а путь к гармонии, здоровью и внутреннему балансу.</p>
+      <p>Мы следуем принципам осознанности и самосовершенствования. Каждый ученик важен для нас, и мы стремимся помочь каждому достичь личных целей —</p>
+      <p><em>будь то физическое здоровье, душевное равновесие или поиск новых смыслов в жизни.</em></p>
+    </div>
+  </section>
+
+  <div class="intro-wrap">
+    <div class="intro-text">
+      Познакомьтесь с нашими инструкторами — сертифицированными профессионалами,
+      которые помогут вам в каждом шаге.
+    </div>
+    <div class="intro-line"></div>
   </div>
-</section>
+
+  <section class="teacher">
+    <h2 class="teacher-title">Анна — специалист по Хатха-йоге и медитациям</h2>
+
+    <div class="teacher-block">
+      <img src="https://picsum.photos/600/400?random=32" alt="Анна">
+      <div class="text">
+        <p>Анна — сертифицированный инструктор с 5-летним опытом преподавания.</p>
+        <p>Её стиль — мягкий и внимательный подход, который помогает ученикам любого уровня почувствовать связь с телом и сознанием. Анна сочетает традиционные асаны с дыхательными практиками, уделяя особое внимание расслаблению и осознанности.</p>
+        <p>Ведёт группы для новичков и медитативные классы для снятия стресса.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="teacher">
+    <h2 class="teacher-title">Ольга — инструктор по Виньясе и Аэройоге</h2>
+
+    <div class="teacher-block">
+      <img src="https://picsum.photos/600/400?random=33" alt="Ольга">
+      <div class="text">
+        <p>Ольга — энергичный и вдохновляющий преподаватель, специализирующийся на динамичных практиках.</p>
+        <p>Стаж — более 7 лет; обучалась у ведущих мастеров йоги. Её занятия помогают развить гибкость, силу и выносливость, а также привносят лёгкость и радость движения.</p>
+        <p>Ведёт интенсивные классы Виньясы и занятия в гамаках для тех, кто хочет добавить воздушную грацию в свою практику.</p>
+      </div>
+    </div>
+
+    <div class="double-photo">
+      <img src="https://picsum.photos/600/400?random=34" alt="practice 1">
+      <img src="https://picsum.photos/600/400?random=35" alt="practice 2">
+    </div>
+  </section>
+
+</main>
 <?php include 'includes/footer.php'; ?>
