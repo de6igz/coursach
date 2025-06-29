@@ -22,9 +22,9 @@
 <body>
 <header class="main-header">
   <div class="header-container">
-    <div class="logo">YogaStyle</div>
+    <a href="/" class="logo">YogaStyle</a>
     <nav class="main-nav">
-      <a href="/pages/home.php"<?= isset($activePage) && $activePage==='home' ? ' class="active"' : '' ?>>Направления</a>
+      <a href="/directions.php"<?= isset($activePage) && $activePage==='directions' ? ' class="active"' : '' ?>>Направления</a>
       <a href="/schedule.php"<?= isset($activePage) && $activePage==='schedule' ? ' class="active"' : '' ?>>Расписание</a>
       <a href="#">Абонементы</a>
       <a href="#">Контакты</a>
