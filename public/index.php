@@ -1,6 +1,8 @@
 <?php
 $pageCss = '/assets/css/pages/home.css';
+$extraCss = '/assets/css/components/trial-form.css';
 include 'includes/header.php';
+$trialSuccess = !empty($_GET['trial_success']);
 ?>
 <main class="directions">
     <div class="directions-header">
@@ -42,4 +44,5 @@ include 'includes/header.php';
         </div>
     </div>
 </main>
+<?php include 'includes/trial-form.php'; ?>
 <?php include 'includes/footer.php'; ?>
