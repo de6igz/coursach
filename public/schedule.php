@@ -1,35 +1,57 @@
 <?php
-$title = 'Schedule';
-$bg    = 'https://images.unsplash.com/photo-1506334572581-344b256329f4?auto=format&fit=crop&w=1400&q=80';
+$pageCss = '/assets/css/pages/schedule.css';
 include 'includes/header.php';
-include 'includes/hero.php';
-
-$today = date('l');            // Monday, Tuesday…
-$rows  = [
-  ['Monday',    '08:00', 'Hatha'],
-  ['Tuesday',   '18:30', 'Vinyasa Flow'],
-  ['Wednesday', '20:00', 'Restorative'],
-  ['Thursday',  '07:00', 'Morning Flow'],
-  ['Saturday',  '10:00', 'Mixed Level'],
-];
 ?>
-<section class="py-5">
-  <div class="container">
-    <h2 class="section-title">This week</h2>
-    <div class="table-responsive">
-      <table class="table table-striped align-middle">
-        <thead class="table-light">
-          <tr><th>Day</th><th>Time</th><th>Class</th></tr>
-        </thead>
-        <tbody>
-        <?php foreach ($rows as [$day,$time,$class]): ?>
-          <tr <?= $day === $today ? 'class="table-info fw-semibold"' : '' ?>>
-            <td><?= $day ?></td><td><?= $time ?></td><td><?= $class ?></td>
-          </tr>
-        <?php endforeach; ?>
-        </tbody>
-      </table>
-    </div>
+<main class="schedule-page">
+  <h1>Расписание</h1>
+
+  <div class="legend">
+    <div class="item"><span class="dot base"></span><span>Базовый уровень</span></div>
+    <div class="item"><span class="dot adv"></span><span>Продвинутый уровень</span></div>
   </div>
-</section>
+
+  <table id="schedule">
+    <tr>
+      <th></th>
+      <th>Пн</th><th>Вт</th><th>Ср</th><th>Чт</th><th>Пт</th><th>Сб</th><th>Вс</th>
+    </tr>
+
+    <tr>
+      <th><span>11:00</span></th>
+      <td><div class="cell base">Хатха‑йога</div></td><td></td><td></td><td></td><td></td><td><div class="cell adv">Силовая йога</div></td><td></td>
+    </tr>
+
+    <tr>
+      <th><span>12:00</span></th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+
+    <tr>
+      <th><span>13:00</span></th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+
+    <tr>
+      <th><span>14:00</span></th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+
+    <tr>
+      <th><span>15:00</span></th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+
+    <tr>
+      <th><span>16:00</span></th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+
+    <tr>
+      <th><span>17:00</span></th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+
+    <tr>
+      <th><span>18:00</span></th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+
+    <tr>
+      <th><span>19:00</span></th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+  </table>
+</main>
 <?php include 'includes/footer.php'; ?>

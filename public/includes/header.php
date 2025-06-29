@@ -25,7 +25,7 @@
     <div class="logo">YogaStyle</div>
     <nav class="main-nav">
       <a href="/pages/home.php">Направления</a>
-      <a href="#">Расписание</a>
+      <a href="/schedule.php">Расписание</a>
       <a href="#">Абонементы</a>
       <a href="#">Контакты</a>
       <a href="#">О студии</a>
