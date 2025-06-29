@@ -28,7 +28,7 @@
       <a href="/schedule.php"<?= isset($activePage) && $activePage==='schedule' ? ' class="active"' : '' ?>>Расписание</a>
       <a href="#">Абонементы</a>
       <a href="#">Контакты</a>
-      <a href="#">О студии</a>
+      <a href="/about.php"<?= isset($activePage) && $activePage==='about' ? ' class="active"' : '' ?>>О студии</a>
       <a href="#">Блог</a>
     </nav>
   </div>
