@@ -1,62 +1,75 @@
-<?php
-// public/includes/header.php
-
-// определяем текущую страницу (например, classes.php)
-$active = basename($_SERVER['SCRIPT_NAME']);
-
-$links = [
-  'index.php'       => 'Home',
-  'about.php'       => 'About',
-  'classes.php'     => 'Classes',
-  'schedule.php'    => 'Schedule',
-  'instructors.php' => 'Instructors',
-  'gallery.php'     => 'Gallery',
-  'blog.php'        => 'Blog',
-  'packages.php'    => 'Packages',
-  'contact.php'     => 'Contact',
-  'signup.php'      => 'Sign Up',
-];
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yoga Studio<?= isset($links[$active]) ? ' | ' . $links[$active] : '' ?></title>
+  <title>YogaStyle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
 
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <style>
+    html, body { margin: 0; }
 
-  <!-- Google Font + кастомные стили -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/style.css">
+    .main-header { background:#f7f4f0; }
+    .header-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 18px 32px 10px 32px;
+    }
+    .logo {
+      font-family: 'Mr Dafoe', cursive;
+      font-size: 2.4rem;
+      color: #222;
+      margin-right: 48px;
+      white-space: nowrap;
+    }
+    .main-nav {
+      display: flex;
+      gap: 38px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 400;
+    }
+    .main-nav a {
+      color: #222;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .main-nav a:hover {
+      color: #4ea166;
+    }
+    @media (max-width: 900px) {
+      .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 14px 10px 8px 10px;
+      }
+      .main-nav {
+        gap: 18px;
+        font-size: 1.05rem;
+        flex-wrap: wrap;
+      }
+      .logo {
+        margin-bottom: 8px;
+        font-size: 2rem;
+      }
+    }
 
-  <!-- Favicon (опционально) -->
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  </style>
 </head>
 <body>
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
-  <div class="container">
-    <a class="navbar-brand fw-semibold" href="/index.php">Yoga Studio</a>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarNav" aria-controls="navbarNav"
-            aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <?php foreach ($links as $file => $label): ?>
-          <li class="nav-item">
-            <a class="nav-link <?= $active === $file ? 'active' : '' ?>" href="/<?= $file ?>">
-              <?= $label ?>
-            </a>
-          </li>
-        <?php endforeach; ?>
-      </ul>
-    </div>
+<header class="main-header">
+  <div class="header-container">
+    <div class="logo">YogaStyle</div>
+    <nav class="main-nav">
+      <a href="/pages/home.php">Направления</a>
+      <a href="#">Расписание</a>
+      <a href="#">Абонементы</a>
+      <a href="#">Контакты</a>
+      <a href="#">О студии</a>
+      <a href="#">Блог</a>
+    </nav>
   </div>
-</nav>
+</header>
