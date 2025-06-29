@@ -1,5 +1,7 @@
+/* Trial signup banner */
 .trial-banner {
-    --trial-bg: url("/assets/img/trial-bg.jpg");
+    /* local image path restored; actual file added separately */
+    background: url("/assets/img/trial-bg.jpg") center/cover no-repeat;
     --overlay: rgba(255, 255, 255, 0.85);
     --accent: #098950;
     --border-radius: 22px;
@@ -8,7 +10,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--trial-bg) center/cover no-repeat;
     padding: 3rem 1rem;
     font-family: 'Montserrat', sans-serif;
 }
