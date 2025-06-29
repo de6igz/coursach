@@ -6,6 +6,19 @@
   --wrapper-pad:clamp(1rem,6vw,100px);
 }
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  font-family: 'Montserrat', sans-serif;
+  color: #222;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
+
 .wrapper {
   max-width:1400px;
   margin:0 auto;
