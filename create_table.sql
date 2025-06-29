@@ -1,9 +1,4 @@
-CREATE TABLE IF NOT EXISTS signups (
-    id SERIAL PRIMARY KEY,
-    full_name TEXT NOT NULL,
-    email TEXT NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
+
 
 CREATE TABLE IF NOT EXISTS trial_signups (
     id SERIAL PRIMARY KEY,
