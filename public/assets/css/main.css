@@ -26,9 +26,28 @@ html, body { margin: 0; }
     color: #222;
     text-decoration: none;
     transition: color 0.2s;
+    position: relative;
 }
 .main-nav a:hover {
     color: #4ea166;
+}
+.main-nav a.active {
+    color: #4ea166;
+}
+.main-nav a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    height: 3px;
+    border-radius: 3px;
+    background: #4ea166;
+}
+.nav-underline {
+    width: 100%;
+    height: 3px;
+    background: #4ea166;
 }
 @media (max-width: 900px) {
     .header-container {
