@@ -1,30 +1,48 @@
 :root {
-  --green-color: #098950;
-  --brown-color: #a39087;
-  --default-layout-padding: 10dvw;
+  --green: #098950;
+  --brown: #a39087;
+  --bg: #f5f1ee;
+  --radius: 40px;
+  --layout-pad: clamp(1rem, 6vw, 100px);
 }
 
 body {
-  background-color: #f5f1ee;
+  background: var(--bg);
   font-family: 'Montserrat', sans-serif;
-  padding: 0 var(--default-layout-padding);
+  color: #222;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 var(--layout-pad) 4rem;
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 2.4rem 0 1.2rem;
 }
 
 #schedule {
   width: 100%;
   border-spacing: 0;
-  border-radius: 40px;
-  outline: 2px solid var(--brown-color);
+  border-radius: var(--radius);
+  outline: 2px solid var(--brown);
   overflow: hidden;
+  background: #fff;
+}
+
+#schedule td,
+#schedule th {
+  border-left: 2px solid var(--brown);
 }
 
 #schedule td {
-  border-top: 2px solid var(--brown-color);
-  border-left: 2px solid var(--brown-color);
+  border-top: 2px solid var(--brown);
   text-align: center;
   height: 100px;
   vertical-align: top;
@@ -32,28 +50,28 @@ h1 {
 
 #schedule th {
   text-align: center;
-  border-left: 2px solid var(--brown-color);
   height: 50px;
-  font-weight: 500;
+  font-weight: 600;
   width: 13.5%;
+  font-size: 1rem;
 }
 
 #schedule tr:not(:first-child) th:first-child {
   width: 5.5%;
   border-left: 0;
-  border-top: 2px solid var(--brown-color);
+  border-top: 2px solid var(--brown);
 }
 
 #schedule tr:not(:first-child) th:first-child span {
-  transform: rotate(-90deg);
   display: block;
+  transform: rotate(-90deg);
 }
 
 .legend {
-  font-size: 20px;
+  font-size: 1.15rem;
   display: flex;
   gap: 50px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 .legend .item {
   display: flex;
@@ -61,12 +79,12 @@ h1 {
   gap: 10px;
 }
 .legend .dot {
-  border-radius: 999px;
   width: 20px;
   height: 20px;
+  border-radius: 50%;
 }
-.dot.base {background-color: var(--green-color);}
-.dot.adv  {background-color: var(--brown-color);}
+.dot.base {background: var(--green);}
+.dot.adv  {background: var(--brown);}
 
 .cell {
   color: #fff;
@@ -75,7 +93,8 @@ h1 {
   align-items: center;
   justify-content: center;
   height: 45px;
-  font-size: 14px;
+  font-size: .95rem;
+  margin: 6px;
 }
-.cell.base {background: var(--green-color);}
-.cell.adv  {background: var(--brown-color);}
+.cell.base {background: var(--green);}
+.cell.adv  {background: var(--brown);}

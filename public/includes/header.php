@@ -24,12 +24,13 @@
   <div class="header-container">
     <div class="logo">YogaStyle</div>
     <nav class="main-nav">
-      <a href="/pages/home.php">Направления</a>
-      <a href="/schedule.php">Расписание</a>
+      <a href="/pages/home.php"<?= isset($activePage) && $activePage==='home' ? ' class="active"' : '' ?>>Направления</a>
+      <a href="/schedule.php"<?= isset($activePage) && $activePage==='schedule' ? ' class="active"' : '' ?>>Расписание</a>
       <a href="#">Абонементы</a>
       <a href="#">Контакты</a>
       <a href="#">О студии</a>
       <a href="#">Блог</a>
     </nav>
   </div>
+  <div class="nav-underline"></div>
 </header>

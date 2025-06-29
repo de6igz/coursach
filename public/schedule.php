@@ -1,8 +1,9 @@
 <?php
 $pageCss = '/assets/css/pages/schedule.css';
+$activePage = 'schedule';
 include 'includes/header.php';
 ?>
-<main class="schedule-page">
+<main class="wrapper">
   <h1>Расписание</h1>
 
   <div class="legend">
