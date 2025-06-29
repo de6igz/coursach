@@ -1,35 +1,45 @@
-<?php include 'includes/header.php'; ?>
-
-<div class="hero">
-  <h1>Find Your Balance</h1>
-  <p>Mindful movement • Breath • Community</p>
-  <a href="/signup.php" class="btn btn-lg btn-primary mt-3">Try your first class</a>
-</div>
-
-<section id="intro">
-  <div class="container">
-    <h2 class="section-title">Why practice with us?</h2>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card p-4 text-center">
-          <h3 class="h5">Certified Teachers</h3>
-          <p>All instructors hold Yoga Alliance certificates and >500 hrs teaching.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card p-4 text-center">
-          <h3 class="h5">Small Groups</h3>
-          <p>Max 12 people per class → персональное внимание и коррекции.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card p-4 text-center">
-          <h3 class="h5">Flexible Schedule</h3>
-          <p>Утренняя, дневная и вечерняя сетка — найдётся время даже для IT-работяг 😉</p>
-        </div>
-      </div>
+<?php
+$pageCss = '/assets/css/pages/home.css';
+include 'includes/header.php';
+?>
+<main class="directions">
+    <div class="directions-header">
+        <h1>Направления</h1>
+        <a href="/pages/all-practices.php" class="directions-link">Подробнее о практиках</a>
     </div>
-  </div>
-</section>
 
+    <div class="card-grid">
+        <div class="card">
+            <img src="/assets/img/pilates.png" alt="Пилатес">
+            <div class="card-body">
+                <h3>Пилатес</h3>
+                <p>Пилатес — это серия упражнений для увеличения прочности тела, развития мышц, улучшения осанки, баланса и координации.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/img/yogatherapy.png" alt="Йогатерапия">
+            <div class="card-body">
+                <h3>Йогатерапия</h3>
+                <p>Йогатерапия — совокупность техник йоги, направленных на избавление от проблем и формирование здорового тела.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/img/aerial.png" alt="Аэройога в гамаках">
+            <div class="card-body">
+                <h3>Аэройога в гамаках</h3>
+                <p>Аэройога – эволюционное направление классической хатха-йоги, получило своё название от англ. Aerial Yoga, означающее «воздушная йога».</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/img/hatha.png" alt="Хатха йога">
+            <div class="card-body">
+                <h3>Хатха йога</h3>
+                <p>Хатха-йога – чудодейственное средство, дарующее человеку очищение сознания и гармонию тела.</p>
+            </div>
+        </div>
+    </div>
+</main>
 <?php include 'includes/footer.php'; ?>
